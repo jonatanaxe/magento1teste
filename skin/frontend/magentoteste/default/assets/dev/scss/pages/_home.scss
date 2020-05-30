@@ -1,0 +1,61 @@
+// PAGINA INICIAL
+//--------------------------------------
+.slider-home {
+    width: $full;
+    height: $full;
+
+    // Slider Desktop
+    .slider-desktop {
+        width: $full;
+        height: 630px;
+        display: none;
+
+        @media screen and (min-width: 992px) {
+            display: block;
+        }
+
+        .item-slider {
+            width: $full;
+
+            .image-slider {
+                width: $full;
+                height: 100vh;
+                background-position: top center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    // Slider Mobile
+    .slider-mobile {
+        margin-top: 20px;
+
+        @media screen and (min-width: 992px) {
+            display: none;
+        }
+
+        .item-slider {
+            img {
+                width: $full;
+                height: auto;
+            }
+        }
+    }
+
+    .no-slider {
+        width: $full;
+        height: 240px;
+        background: $color-white;
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+}
+
+// BLOCO BANNER HOME
+//--------------------------------------
+.banner-home{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,65 @@
+
+
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden{
+
+}
+
+
+
+
+// NOT MARGIN
+//--------------------------------------
+.no-margin {
+    margin: 0;
+}
+
+// NOT PADDING
+//--------------------------------------
+.no-padding {
+    padding: 0;
+}
+
+
+// PAGE CONTAINER
+//--------------------------------------
+.page-container {
+    width: $full;
+    height: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        margin-top: 0;
+        margin-bottom: 45px;
+
+        &:last-child {
+            margin-bottom: 25px;
+        }
+    }
+
+    img {
+        width: $full;
+        max-width: $full;
+    }
+}
+
+
+
+// PAGE INTERNAL
+//--------------------------------------
+#page-internal {
+    .providers {
+        margin: 0 0 20px 0;
+    }
+
+    .home-block {
+        margin-bottom: 20px;
+    }
+}

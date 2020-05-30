@@ -1,0 +1,109 @@
+// HEADER
+//--------------------------------------
+header {
+    width: $full;
+
+    .logo{
+        padding-top: 25px;
+        .small{
+            display: none;
+        }
+    }
+
+    .page-header-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav{
+        background-color:$color-theme-dark;
+        .nav-primary{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            a{
+                padding: 10px 15px;
+                color: $color-white;
+                display: inline-flex;
+                border-radius: 5px 5px 0 0;
+                margin: 3px;
+                display: block;
+
+                &:hover{
+                    background-color: $color-theme;
+                }
+            }
+            li{
+                &.menu-active{
+                    position: relative;
+
+                    ul{
+                        &.level0{
+                            display: block;
+                            position: absolute;
+                            z-index: 1;
+                            background-color:$color-theme;
+                            border-radius: 0px 0px 5px 5px;
+                            min-width: 250px;
+                            top: 51px;
+                            left: 3px;
+                        }
+                    }
+                }
+            }
+            ul{
+                &.level0{
+                    display: none;
+                }
+            }
+        }
+    }
+    .skip-links{
+
+    }
+}
+
+//busca do topo
+#header-search{
+    .input-box{
+        display: flex;
+        label{
+            display: none;
+        }
+        .input-text{
+            border-radius: 5px 0px 0px 5px;
+        }
+        .search-button{
+            border-radius: 0px 5px 5px 0px;
+            padding: 10px 19px;
+            background-color: $color-theme-dark;
+        }
+
+        .fa-search{
+            color: $color-white;
+        }
+    }
+
+}
+
+//minicart topo
+
+.account-cart-wrapper{
+    display: flex;
+    .header-minicart{
+        display: none;
+
+    }
+    .cart-wrapper{
+        margin-left: 15px;
+    }
+    #header-account{
+        display: none;
+    }
+
+    .svg-inline--fa{
+        color: $color-theme-dark;
+        font-size: 34px;
+        line-height: 1.15;
+    }
+}
