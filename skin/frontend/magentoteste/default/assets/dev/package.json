@@ -1,12 +1,12 @@
 {
   "name": "magentoteste",
   "version": "1.0.0",
-  "description": "Project Description ",
+  "description": "Magento Teste Tema",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Keller Kichel",
+  "author": "Jonatan Machado",
   "license": "BSD-2-Clause",
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -22,8 +22,5 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0"
-  },
-  "browserslist": [
-    "extends @wordpress/browserslist-config"
-  ]
+  }
 }

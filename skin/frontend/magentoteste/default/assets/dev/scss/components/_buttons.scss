@@ -1,0 +1,13 @@
+.button{
+    width: 100%;
+    background-color: $color-theme-dark;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    color: $color-white;
+    text-transform: uppercase;
+    line-height:1;
+    &:hover{
+        background-color: $color-theme;
+    }
+}

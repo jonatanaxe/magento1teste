@@ -1,0 +1,44 @@
+ul{
+    display: flex;
+    justify-content: space-between;
+    .item{
+        @include column(3);
+    }
+}
+
+.price{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.add-to-links{
+    .link-wishlist,.link-compare{
+        font-size: 0;
+        &:after{
+            font-size: 25px;
+            font-family: "Font Awesome 5 Free";
+            content: "\f004";
+            display: inline-block;
+            padding-right: 3px;
+            vertical-align: middle;
+            font-weight:900;
+        }
+    }
+
+    .link-wishlist,.link-compare{
+        &:hover{
+
+                color:$color-theme;
+
+        }
+    }
+    .link-compare{
+        &:after{
+            content: "\f362";
+        }
+    }
+    .separator{
+        display: none;
+    }
+
+}

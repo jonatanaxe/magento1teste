@@ -69,10 +69,10 @@
                 <action method="addItem"><type>skin_js</type><name>js/minicart.js</name></action>
 
                 <!-- awesome font -->
-                <block type="core/text" name="meuJSExterno">
+                 <block type="core/text" name="meuJSExterno">
                     <action method="setText">
                         <text>
-                            <![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>]]>
+                            <![CDATA[<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" media="all">]]>
                         </text>
                     </action>
                 </block>
