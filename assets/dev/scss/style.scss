@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+// ESSENCIAIS
+//------------------------------------
+@import 'mix/variables';
+@import 'mix/grid';
+@import 'components/normalize';
+
+
+// ESTILOS INICIAIS
+//------------------------------------
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-size: $font-base * 1px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: $font-base*1px;
+    color: $color-black;
+    position: relative;
+
+    &[aria\-expanded=true] {
+        overflow: hidden;
+    }
+}
+
+a {
+    color: $input-color;
+
+    &,
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+
+// ESTILOS COMPONENTES (gerados arquivos separados)
+//------------------------------------
+@import 'components/forms';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/geral';
+
+
+//ESTILOS MISCELANEOS
+//------------------------------------
+@import 'misc/essential';
+@import 'misc/fonts';
+@import 'misc/typography';
+
+
+//ESTILOS PÁGINAS
+//------------------------------------
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/videos';
+@import 'pages/product';
