@@ -21,13 +21,11 @@ $j(document).ready(function(){
     $j('.hamburger-toggle').on('click', toggleOffcanvas);
 
 
-    // Mostra Api Mobile
     if($j('.api-mobile').length) {
         $j(".open-login" ).click(function() {
             $j(".content-api-mobile").show(300);
         });
 
-        // Esconde Api Mobile
         $j(".btn-close" ).click(function() {
             $j(".content-api-mobile").hide(200);
         });
@@ -35,10 +33,10 @@ $j(document).ready(function(){
 
 
     // list
-    $j('.carousel-products').slick({
+    $j('.products-grid').slick({
         autoplay: true,
         autoplaySpeed: 4000,
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 3,
         dots: false,
         arrows: false,

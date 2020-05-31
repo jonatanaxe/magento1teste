@@ -2,7 +2,17 @@ ul{
     display: flex;
     justify-content: space-between;
     .item{
+        position: relative;
         @include column(3);
+    }
+}
+
+//precos
+
+.price-box{
+    display: flex;
+    p{
+        margin: 0;
     }
 }
 
@@ -11,7 +21,79 @@ ul{
     font-weight: 900;
 }
 
+.old-price{
+    .price{
+        font-weight: 100;
+        &:after{
+            content: " ";
+            background-color: $color-theme;
+            position: relative;
+            height: 1px;
+            width: 71px;
+            transform: rotate(6deg);
+            display: block;
+            bottom: 14px;
+            left: -6px;
+
+        }
+    }
+    .price-label{
+        display: none;
+    }
+}
+
+
+.special-price{
+    display: flex;
+    justify-content: space-between;
+    &:after{
+        content: "Sale";
+        background-color: #ff0000;
+        color: #fff;
+        padding: 2px 5px;
+        position: absolute;
+        font-size: 11px;
+        top: 3px;
+        right: 18px;
+    }
+    .price-label{
+        display: none;
+    }
+}
+
+//gird infos
+.products-grid{
+    margin-left: -15px;
+    margin-right: -15px;
+    .product-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .actions{
+            display: flex;
+        }
+        .ratings{
+            display: none;
+        }
+        .product-name{
+            margin: 0;
+        }
+    }
+
+
+}
+
+//links opcionais de acao
 .add-to-links{
+    padding-left: 15px;
+    li{
+        &:first-child{
+            margin-right: 5px;
+        }
+        a{
+            display: block;
+        }
+    }
     .link-wishlist,.link-compare{
         font-size: 0;
         &:after{
@@ -39,4 +121,15 @@ ul{
         display: none;
     }
 
+}
+
+//imagens thumb
+.product-image{
+    img{
+        border: 1px solid $color-theme-dark;
+        border-radius: $px-radius;
+        &:hover{
+            border: 1px solid $color-theme;
+        }
+    }
 }

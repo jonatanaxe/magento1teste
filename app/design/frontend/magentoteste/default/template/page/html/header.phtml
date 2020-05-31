@@ -84,18 +84,10 @@
     <div id="header-nav" class="skip-content">
         <?php echo $this->getChildHtml('topMenu') ?>
     </div>
-    <?php
-    $action = Mage::app()->getFrontController()->getAction()->getFullActionName();
-    if ($action == 'cms_index_index') {
-        ?>
-<?php
-  echo $this->getLayout()->createBlock('cms/block')->setBlockId('slider-home')->toHtml();
-?>
-    <?php }
-    else {
-        //not on homepage
-    }
-    ?>
+
+    <?php if (Mage::app()->getFrontController()->getAction()->getFullActionName() == 'cms_index_index') : ?>
+    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('slider-home')->toHtml(); ?>
+    <?php endif; ?>
 
 
 

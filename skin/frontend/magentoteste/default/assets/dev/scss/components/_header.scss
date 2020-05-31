@@ -36,7 +36,7 @@ header {
                 padding: 10px 15px;
                 color: $color-white;
                 display: inline-flex;
-                border-radius: 5px 5px 0 0;
+                border-radius: $px-radius $px-radius 0 0;
                 margin: 3px;
                 display: block;
 
@@ -54,7 +54,7 @@ header {
                             position: absolute;
                             z-index: 1;
                             background-color:$color-theme;
-                            border-radius: 0px 0px 5px 5px;
+                            border-radius: 0px 0px $px-radius $px-radius;
                             min-width: 250px;
                             top: 51px;
                             left: 3px;
@@ -83,13 +83,13 @@ header {
             display: none;
         }
         .input-text{
-            border-radius: 5px 0px 0px 5px;
+            border-radius: $px-radius 0px 0px $px-radius;
             width: 100%;
             border: 1px solid $color-theme-dark;
             padding: 0 15px;
         }
         .search-button{
-            border-radius: 0px 5px 5px 0px;
+            border-radius: 0px $px-radius $px-radius 0px;
             padding: 10px 19px;
             background-color: $color-theme-dark;
             width: auto;
