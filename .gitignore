@@ -4,6 +4,8 @@
 
 /PATCH_*.sh
 
+/media/catalog/product/cache/*
+
 !/media/customer
 /media/customer/*
 !/media/customer/.htaccess
