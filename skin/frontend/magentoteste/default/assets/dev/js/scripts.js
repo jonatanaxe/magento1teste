@@ -9,6 +9,7 @@ $j(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        dots: true,
         speed: 400,
     });
 
@@ -39,7 +40,7 @@ $j(document).ready(function(){
         slidesToShow: 5,
         slidesToScroll: 3,
         dots: false,
-        arrows: false,
+        arrows: true,
         infinite: true,
         speed: 300,
         responsive: [

@@ -133,3 +133,70 @@ ul{
         }
     }
 }
+
+//slick style
+.slick-prev,
+.slick-next{
+    position:absolute;
+    top: 50%;
+    z-index: 1;
+    font-size: 0;
+    background: rgba(0,0,0,.3);
+    border-radius: 50%;
+    height: 39px;
+    -webkit-box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+    &:after{
+        content: "";
+        border: $color-theme-dark 1px solid;
+        border-radius: 50%;
+        font-size: 25px;
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: $color-white;
+    }
+}
+.slick-next{
+    right: 0;
+    &:after{
+        content: "\f061";
+    }
+}
+.slick-prev{
+    left: 0;
+    &:after{
+        content:"\f060" ;
+    }
+}
+
+.slick-dots{
+    display: flex;
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 27px;
+    li{
+        &.slick-active{
+            button{
+                background: rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        button{
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            font-size: 0;
+            background: rgba(0,0,0,.3);
+            border-radius: 50%;
+            height: 15px;
+            box-shadow: 2px 2px 5px -1px rgba(0,0,0,.75);
+            border: 2px solid #ccc;
+        }
+    }
+
+}
