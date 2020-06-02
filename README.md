@@ -16,3 +16,8 @@
 
     Caso nao use redis talvez de erro precisa desabiltar no local.xml a session e cache
     magentoteste/app/etc/local.xml
+
+## Compilar scss e js preprocessador gulp
+
+    Rodar o comando ` npm install ` depois ` gulp ` na pasta
+    magentoteste/skin/frontend/magentoteste/default/assets/dev
