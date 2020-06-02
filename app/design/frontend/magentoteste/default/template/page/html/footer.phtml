@@ -26,7 +26,12 @@
 ?>
 <div class="footer-container">
     <div class="footer">
-        <?php echo $this->getChildHtml() ?>
+        <div class="newsletter-block wrapper-content">
+            <?php echo $this->getLayout()->createBlock('newsletter/subscribe')->setTemplate('newsletter/subscribe.phtml')->toHtml(); ?>
+        </div>
+        <div class="footer-block wrapper-content">
+            <?php echo $this->getChildHtml() ?>
+        </div>
         <address class="copyright"><?php echo $this->getCopyright() ?></address>
     </div>
 </div>

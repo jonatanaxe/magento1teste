@@ -35,9 +35,9 @@ Default layout, loads most of the pages
     <default>
 
         <!-- Mage_Newsletter -->
-        <reference name="footer">
+        <!-- <reference name="footer">
             <block type="newsletter/subscribe" name="footer.newsletter" as="newsletter" before="footer_store_language" template="newsletter/subscribe.phtml"/>
-        </reference>
+        </reference> -->
     </default>
 
 <!--

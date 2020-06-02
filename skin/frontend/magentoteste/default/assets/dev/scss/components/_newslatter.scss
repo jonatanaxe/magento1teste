@@ -1,0 +1,20 @@
+.block-subscribe{
+    .block-content{
+        display: flex;
+
+        .input-box{
+            .input-text{
+                border-radius: 1px 0 0 1px;
+                width: 100%;
+                border: 1px solid #4a4a4a;
+                padding: 5px 15px;
+            }
+        }
+        .button {
+            border-radius: 0 1px 1px 0;
+            padding: 10px 19px;
+            background-color: #4a4a4a;
+            width: auto;
+        }
+    }
+}

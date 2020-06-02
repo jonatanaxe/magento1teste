@@ -1,5 +1,22 @@
 // FOOTER
 //--------------------------------------
-.footer {
+.footer-block {
+    &.wrapper-content{
+        display: flex;
+        .links{
+            flex:1;
+        }
+        ul{
+            display: block;
 
+            li{
+                display: block;
+            }
+        }
+    }
+}
+
+.copyright{
+    text-align: center;
+    padding: 20px 0px;
 }
