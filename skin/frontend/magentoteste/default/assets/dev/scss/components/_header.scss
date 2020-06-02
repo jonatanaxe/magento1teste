@@ -32,6 +32,11 @@ header {
             display: flex;
             justify-content: space-evenly;
             list-style: none;
+            li{
+                &.menu-active{
+                    background-color: $color-theme;
+                }
+            }
             a{
                 padding: 10px 15px;
                 color: $color-white;
