@@ -24,7 +24,7 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<div class="block block-subscribe">
+<div class="block block-subscribe wrapper-content">
     <div class="block-title">
         <strong><span><?php echo $this->__('Newsletter') ?></span></strong>
     </div>
@@ -35,10 +35,11 @@
             </div>
             <div class="input-box">
                <input type="email" autocapitalize="off" autocorrect="off" spellcheck="false" name="email" id="newsletter" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Sign up for our newsletter')) ?>" class="input-text required-entry validate-email" />
+                <div class="actions">
+                    <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Subscribe')) ?>" class="button"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
+                </div>
             </div>
-            <div class="actions">
-                <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Subscribe')) ?>" class="button"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
-            </div>
+
         </div>
     </form>
     <script type="text/javascript">
